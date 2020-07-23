@@ -1,0 +1,43 @@
+* Qucs 0.0.20 /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_LAB3_NGSPICE_prj/LAB3_SCHEM.sch
+*.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.20  /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_LAB3_NGSPICE_prj/LAB3_SCHEM.sch
+.INCLUDE "/home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_LAB3_NGSPICE_prj/LM3046.inc"
+Q1 _net0  _net1  _net2 LM3046
+Q2 _net3  _net4  _net2 LM3046
+QBC557B_1 _net5 _net0 _net6 QMOD_BC557B_1 AREA=1 TEMP=26.85
+.MODEL QMOD_BC557B_1 pnp (Is=3.834e-14 Nf=1.008 Nr=1.005 Ikf=0.08039 Ikr=0.047 Vaf=21.11 Var=32.02 Ise=1.219e-14 Ne=1.528 Isc=2.852e-13 Nc=1.28 Bf=344.4 Br=14.84 Rbm=1 Irb=1e-06 Rc=0.5713 Re=0.6202 Rb=1 Cje=1.23e-11 Vje=0.6106 Mje=0.378 Cjc=1.084e-11 Vjc=0.1022 Mjc=0.3563 Xcjc=0.6288 Cjs=0 Vjs=0.75 Mjs=0.333 Fc=0.8027 Tf=5.595e-10 Xtf=3.414 Vtf=5.23 Itf=0.1483 Tr=1e-32 Kf=0 Af=1 Ptf=0 Xtb=0 Xti=3 Eg=1.11 Tnom=26.85 )
+Q7 _net7  _net5  _net8 LM3046
+Q3 _net2  _net9  _net10 LM3046
+Q4 _net9  _net9  _net11 LM3046
+Q5 _net5  _net9  _net12 LM3046
+R3 _net13 _net12  50
+R10 0 _net1  50
+R11 _net1 _net14  50
+R5 _net0 _net7  10K
+R6 _net3 _net7  10K
+R7 _net9 _net7  8K
+R2 _net13 _net11  80
+R1 _net13 _net10  500
+R4 _net6 _net7  300
+Q8 _net7  _net8  _net15 LM3046
+Q6 _net15  _net9  _net13 LM3046
+R12 _net16 _net15  75
+R13 _net16 0  75
+R8 _net15 _net4  12K
+R9 0 _net4  1K
+V5 _net14 0 DC 0 SIN(0 1 1G 0 0) AC 1
+V2 _net7 0 DC 5
+V3 0 _net13 DC 5
+
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+*ac dec 11 10 100m 
+op
+write LAB3_SCHEM_ac.txt 
+*destroy all
+*reset
+
+*exit
+.endc
+.END

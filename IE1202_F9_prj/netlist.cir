@@ -1,0 +1,43 @@
+* Qucs 0.0.21 /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/IE1202_F9_prj/MOS_DIFF_PAIR.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.21  /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/IE1202_F9_prj/MOS_DIFF_PAIR.sch
+.PARAM VFIDD = 1
+.PARAM Vinp = VDIFF/2
+.PARAM Vinn = VDIFF/2
+.PARAM VCM = 0
+V1 _net0 0 DC 5
+R1 Voutn _net0  1000
+R2 Voutp _net0  1000
+MT1 Voutn _net1 _net2 0 MMOD_T1 L=1e-06 W=5e-05 Ad=0 As=0 Pd=0 Ps=0 Temp=26.85
+.MODEL MMOD_T1 NMOS (Vt0=0.8 Kp=0.0002 Gamma=0.5 Phi=0.6 Lambda=0 Rd=0 Rs=0 Is=1e-14 Ld=0 Tox=1e-07 Cgso=0 Cgdo=0 Cgbo=0 Cbd=0 Cbs=0 Pb=0.8 Mj=0.5 Fc=0.5 Cjsw=0 Mjsw=0.33 Tpg=1 Uo=600 Rsh=0 Cj=0 Js=0 Kf=0 Af=1 Tnom=26.85 )
+MT4 Voutp _net3 _net2 0 MMOD_T4 L=1e-06 W=5e-05 Ad=0 As=0 Pd=0 Ps=0 Temp=26.85
+.MODEL MMOD_T4 NMOS (Vt0=0.8 Kp=0.0002 Gamma=0.5 Phi=0.6 Lambda=0 Rd=0 Rs=0 Is=1e-14 Ld=0 Tox=1e-07 Cgso=0 Cgdo=0 Cgbo=0 Cbd=0 Cbs=0 Pb=0.8 Mj=0.5 Fc=0.5 Cjsw=0 Mjsw=0.33 Tpg=1 Uo=600 Rsh=0 Cj=0 Js=0 Kf=0 Af=1 Tnom=26.85 )
+V4 _net4 _net5 DC 3
+I1 _net0 _net6 DC 2.5MA
+MT2 _net7 _net7 0 0 MMOD_T2 L=1e-06 W=5e-05 Ad=0 As=0 Pd=0 Ps=0 Temp=26.85
+.MODEL MMOD_T2 NMOS (Vt0=0.8 Kp=0.0002 Gamma=0.5 Phi=0.6 Lambda=0 Rd=0 Rs=0 Is=1e-14 Ld=0 Tox=1e-07 Cgso=0 Cgdo=0 Cgbo=0 Cbd=0 Cbs=0 Pb=0.8 Mj=0.5 Fc=0.5 Cjsw=0 Mjsw=0.33 Tpg=1 Uo=600 Rsh=0 Cj=0 Js=0 Kf=0 Af=1 Tnom=26.85 )
+VPr2 _net6 _net7 DC 0
+VPr3 _net2 _net8 DC 0
+V3 _net1 _net4 DC 0 SIN(0 {VINP} 1K 0 0 0) AC {VINP}
+V5 _net4 _net3 DC 0 SIN(0 {VINN} 1K 0 0 0) AC {VINN}
+V6 _net5 0 DC 0 SIN(0 {VCM} 1K 0 0 0) AC {VCM}
+MT3 _net8 _net7 0 0 MMOD_T3 L=1e-06 W=0.0001 Ad=0 As=0 Pd=0 Ps=0 Temp=26.85
+.MODEL MMOD_T3 NMOS (Vt0=0.8 Kp=0.0002 Gamma=0.5 Phi=0.6 Lambda=0.001 Rd=0 Rs=0 Is=1e-14 Ld=0 Tox=1e-07 Cgso=0 Cgdo=0 Cgbo=0 Cbd=0 Cbs=0 Pb=0.8 Mj=0.5 Fc=0.5 Cjsw=0 Mjsw=0.33 Tpg=1 Uo=600 Rsh=0 Cj=0 Js=0 Kf=0 Af=1 Tnom=26.85 )
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+ac dec 11 1 10m 
+let Av_diff=V(Voutp)-V(Voutn)
+let Av = ac.v(Voutp-ac.v(Voutn)
+write MOS_DIFF_PAIR_ac.txt VPr2#branch VPr3#branch v(Voutn) v(Voutp)  Av_diff Av
+destroy all
+reset
+
+tran 9.95025e-06 0.002 0 
+write MOS_DIFF_PAIR_tran.txt VPr2#branch VPr3#branch v(Voutn) v(Voutp) 
+destroy all
+reset
+
+exit
+.endc
+.END

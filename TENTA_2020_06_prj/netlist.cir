@@ -1,0 +1,44 @@
+* Qucs 0.0.21 /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/TENTA_2020_06_prj/Mål5_3.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.21  /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/TENTA_2020_06_prj/Mål5_3.sch
+.PARAM CAP1 = 0.1u
+.PARAM CAP2 = 0.1n
+.PARAM CAP3 = 0.1p
+.PARAM RES1 = 1k
+.PARAM RES2 = 9k
+C4 0 _net6  {CAP3} 
+ESRC2 VA 0 _net6 0 1
+R5 _net5 _net6  10K
+ESRC4 _net5 0 _net4 0 1
+R2 VAB VA  {RES2}
+R1 0 VAB  {RES1}
+C2 0 _net4  {CAP2} 
+R4 _net3 _net4  10K
+ESRC3 _net3 0 _net2 0 1
+R3 _net1 _net2  10K
+C1 0 _net2  {CAP1} 
+V1 _net0 0 DC 0 SIN(0 1 1K 0 0 0) AC 1
+ESRC1 _net1 0 _net0 0 200000
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+ac dec 11 1 1g 
+let Av0_dB = dB(ac.v(VA))
+let BAv0_dB = dB(ac.v(VAB))
+let B = ac.v(VAB)/ac.v(VA)
+let B_inv = 1/B
+let B_dB = dB(B)
+let B_inv_dB = dB(B_inv)
+let fas_BAv0 = phase(ac.v(VAB))*180/3.1416
+let fas_B = phase(B)*180/3.1416
+write Mål5_3_ac.txt v(VA) v(VAB)  Av0_dB BAv0_dB B B_inv B_dB B_inv_dB fas_BAv0 fas_B
+destroy all
+reset
+
+write Mål5_3_tran.txt v(VA) v(VAB) 
+destroy all
+reset
+
+exit
+.endc
+.END

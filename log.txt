@@ -1,0 +1,9 @@
+Ngspice started...
+
+Circuit: * qucs 0.0.22 /home/saul/projects/qucs_analog_elektronik/ie1202_hemlab_prj/f13_lab2_ngspice.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+ngspice-32 done

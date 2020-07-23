@@ -1,0 +1,40 @@
+* Qucs 0.0.21 /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_F5_prj/ampl.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.21  /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_F5_prj/ampl.sch
+.PARAM CAP1 = 0.1u
+.PARAM RES1 = 1k
+.PARAM RES2 = 9k
+R2 _net0 Av0  10K
+ESRC2 Av0 0 Av0 0 1
+C1 0 Av0  {CAP1} 
+R1 Av0 BAv0  {RES2}
+R6 _net1 Av  10K
+ESRC3 Av 0 Av 0 1
+C2 0 Av  {CAP1} 
+R8 Av _net2  {RES2}
+R5 0 BAv0  {RES1}
+R7 0 _net2  {RES1}
+V3 _net3 _net4 DC 0 SIN(0 1 1K 0 0 0) AC 1
+V2 _net5 0 DC 0 SIN(0 1 1K 0 0 0) AC 1
+RV40 _net4 0 0
+ESRC1 _net0 0 _net5 0 200000
+ESRC4 _net1 0 _net3 _net2 200000
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+write ampl_dc_swp_swp.txt v(Av) v(Av0) v(BAv0) 
+destroy all
+reset
+
+write ampl_tran.txt v(Av) v(Av0) v(BAv0) 
+destroy all
+reset
+
+ac dec 11 1 1g 
+write ampl_ac.txt v(Av) v(Av0) v(BAv0) 
+destroy all
+reset
+
+exit
+.endc
+.END
