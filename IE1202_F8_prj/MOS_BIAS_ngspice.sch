@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.22>
 <Properties>
-  <View=-40,111,1301,1052,1,0,0>
+  <View=-40,111,1301,1007,1,0,0>
   <Grid=10,10,0>
   <DataSet=MOS_BIAS_ngspice.dat>
   <DataDisplay=MOS_BIAS_ngspice.dpl>
@@ -45,7 +45,7 @@
 <Diagrams>
   <Rect 310 846 444 336 3 #c0c0c0 1 00 1 0 0.5 2 1 -0.000604762 0.005 0.00665238 1 -1 1 1 315 0 225 "" "" "">
 	<"ngspice/i(pr1)" #ff0000 0 3 0 0 0>
-	  <Mkr 1.76471/0.190476 472 -106 3 0 0>
+	  <Mkr 0.0980392/0 472 -106 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

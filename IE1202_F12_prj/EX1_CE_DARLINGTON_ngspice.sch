@@ -88,16 +88,16 @@
   <360 360 360 360 "Uin" 330 320 0 "">
 </Wires>
 <Diagrams>
-  <Rect 310 976 564 349 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -100 50 0 1 -1 1 1 315 0 225 "" "" "">
-	<"ngspice/ac.av" #0000ff 0 3 0 0 0>
-	  <Mkr 100000 153 -290 3 0 0>
-  </Rect>
   <Rect 1030 977 351 592 3 #c0c0c0 1 00 1 0 0.001 0.004 1 -0.348029 0.5 3.27142 1 -1 0.2 1 315 0 225 "" "" "">
 	<"ngspice/tran.v(b)" #ff00ff 0 3 0 0 0>
 	<"ngspice/tran.v(c)" #00ff00 0 3 0 0 0>
 	<"ngspice/tran.v(e)" #00ffff 0 3 0 0 0>
 	<"ngspice/tran.v(uin)" #0000ff 0 3 0 0 0>
 	<"ngspice/tran.v(vout)" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 300 976 564 349 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -100 50 0 1 -1 1 1 315 0 225 "" "" "">
+	<"ngspice/ac.av" #0000ff 0 3 0 0 0>
+	  <Mkr 100000 153 -290 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

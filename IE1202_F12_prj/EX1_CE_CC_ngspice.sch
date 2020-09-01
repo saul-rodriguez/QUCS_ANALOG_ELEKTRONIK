@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.22>
 <Properties>
-  <View=60,61,1511,1233,0.751315,0,0>
+  <View=60,61,1511,1233,1,0,64>
   <Grid=10,10,0>
   <DataSet=EX1_CE_CC_ngspice.dat>
   <DataDisplay=EX1_CE_CC_ngspice.dpl>
@@ -89,9 +89,9 @@
 	<"ngspice/tran.v(uin)" #0000ff 0 3 0 0 0>
 	<"ngspice/tran.v(vout)" #ff0000 0 3 0 0 0>
   </Rect>
-  <Rect 380 949 564 302 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -100 50 0 1 -1 1 1 315 0 225 "" "" "">
+  <Rect 390 959 564 302 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -100 50 0 1 -1 1 1 315 0 225 "" "" "">
 	<"ngspice/ac.av" #0000ff 0 3 0 0 0>
-	  <Mkr 100000 163 -253 3 0 0>
+	  <Mkr 65793.3 93 -203 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

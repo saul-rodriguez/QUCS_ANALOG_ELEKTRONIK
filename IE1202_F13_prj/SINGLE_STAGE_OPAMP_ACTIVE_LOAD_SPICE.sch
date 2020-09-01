@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.20>
+<Qucs Schematic 0.0.22>
 <Properties>
-  <View=68,-49,1624,967,1,5,120>
+  <View=68,-49,1624,967,1,5,0>
   <Grid=10,10,1>
   <DataSet=SINGLE_STAGE_OPAMP_ACTIVE_LOAD_SPICE.dat>
   <DataDisplay=SINGLE_STAGE_OPAMP_ACTIVE_LOAD_SPICE.dpl>
@@ -116,8 +116,9 @@
   </Rect>
   <Rect 740 860 335 264 3 #c0c0c0 1 00 1 -2 1 4 1 -3.29986 2 6 1 -0.219029 0.5 2.17961 315 0 225 "" "" "">
 	<"ngspice/v(vout)" #0000ff 2 3 0 0 0>
+	  <Mkr -0.444444 244 -335 3 0 0>
 	<"ngspice/gain" #ff0000 2 3 0 0 1>
-	  <Mkr 1.40741 137 -108 3 0 0>
+	  <Mkr 1.77778 137 -108 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

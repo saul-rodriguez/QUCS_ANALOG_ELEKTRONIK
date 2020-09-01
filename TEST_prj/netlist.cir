@@ -1,0 +1,12 @@
+* Qucs 0.0.22 /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/TEST_prj/voltage_divider.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.22  /home/saul/projects/QUCS_ANALOG_ELEKTRONIK/TEST_prj/voltage_divider.sch
+R1 IN OUT  50
+R2 OUT 0  50
+V1 IN 0 DC 1
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+exit
+.endc
+.END

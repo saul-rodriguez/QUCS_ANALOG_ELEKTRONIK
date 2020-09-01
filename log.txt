@@ -1,9 +1,62 @@
 Ngspice started...
 
-Circuit: * qucs 0.0.22 /home/saul/projects/qucs_analog_elektronik/ie1202_hemlab_prj/f13_lab2_ngspice.sch
+Circuit: * qucs 0.0.22 /home/saul/projects/qucs_analog_elektronik/ie1202_hemlab_prj/f2_lab2.sch
 
+Reducing trtol to 1 for xspice 'A' devices
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
-No. of Data Rows : 1
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vcc                                          5
+vee                                         -5
+_net0                                    0.001
+vout                                0.00301868
+xop741ns1.x1.3                          0.0005
+xop741ns1.x1.4                       -0.695705
+xop741ns1.x1.5                         4.97419
+xop741ns1.x1.6                         4.97419
+xop741ns1.x1.7                      0.00100002
+xop741ns1.x1.16                    1.58115e-08
+xop741ns1.x1.49                              0
+xop741ns1.x1.8                            3.37
+xop741ns1.x1.9                      0.00305545
+xop741ns1.x1.10                          -3.37
+xop741ns1.x1.98                              0
+xop741ns1.x1.15                     0.00305545
+xop741ns1.x1.17                              0
+xop741ns1.x1.23                     0.00305545
+xop741ns1.x1.24                     0.00495844
+xop741ns1.x1.26                       0.653019
+xop741ns1.x1.22                     0.00301868
+xop741ns1.x1.25                     0.00114742
+xop741ns1.x1.27                      -0.646981
+xop741ns1.x1.21                      -0.176981
+xop741ns1.x1.20                       0.183019
+vin                                          0
+l.xop741ns1.x1.l3#branch           2.01868e-07
+l.xop741ns1.x1.l2#branch          -1.58115e-11
+e.xop741ns1.x1.e1#branch           2.01868e-07
+e.xop741ns1.x1.eh#branch             6.123e-15
+v3#branch                                1e-07
+v.xop741ns1.x1.v4#branch          -1.80959e-13
+v.xop741ns1.x1.v5#branch          -1.81033e-13
+v.xop741ns1.x1.v7#branch          -7.63213e-05
+v.xop741ns1.x1.v6#branch          -7.61195e-05
+v.xop741ns1.x1.v3#branch           3.37406e-12
+v.xop741ns1.x1.v2#branch           3.36794e-12
+v2#branch                          -0.00145112
+v1#branch                          -0.00145116
+a$poly$e.xop741ns1.x1.eos#branch_1_0     -7.9868e-08
+
+
+No. of Data Rows : 117
+binary raw file "F2_LAB2_tran.txt"
+Reset re-loads circuit * qucs 0.0.22 /home/saul/projects/qucs_analog_elektronik/ie1202_hemlab_prj/f2_lab2.sch
+
+Circuit: * qucs 0.0.22 /home/saul/projects/qucs_analog_elektronik/ie1202_hemlab_prj/f2_lab2.sch
+
 ngspice-32 done
