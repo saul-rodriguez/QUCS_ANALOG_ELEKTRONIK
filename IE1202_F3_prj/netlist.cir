@@ -1,0 +1,20 @@
+* Qucs 0.0.21 /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_F3_prj/EX1_ngspice.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.21  /home/saul/projects/QUCS/QUCS_ANALOG_ELEKTRONIK/IE1202_F3_prj/EX1_ngspice.sch
+V1 _net0 0 DC 0 SIN(0 1 1G 0 0 0) AC 1
+R2 Uut _net0  10K
+R1 0 Uut  10K
+C1 Uut _net0  22N 
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+ac dec 9 0.1 100k 
+let Vuut_dB = dB(ac.v(Uut))
+let Vuut_phase = phase(ac.v(Uut))*180/3.141592
+write EX1_ngspice_ac.txt v(Uut)  Vuut_dB Vuut_phase
+destroy all
+reset
+
+exit
+.endc
+.END

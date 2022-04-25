@@ -1,0 +1,32 @@
+<Qucs Schematic 0.0.19>
+<Properties>
+  <View=0,0,1476,1255,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=lab2.dat>
+  <DataDisplay=lab2.sch>
+  <OpenDisplay=1>
+  <Script=lab2.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 160 533 777 443 3 #c0c0c0 1 10 1 0.1 1 1e+08 1 -30 5 21.9063 1 -1 0.2 1 315 0 225 "" "" "">
+	<"Out_dB" #0000ff 0 3 0 0 0>
+	  <Mkr 5.01187e+06 725 -332 3 0 0>
+	  <Mkr 1.99526e+06 690 -437 3 0 0>
+	  <Mkr 2.51189e+06 699 -418 3 0 0>
+	  <Mkr 50118.7 552 -454 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>

@@ -1,0 +1,54 @@
+<Qucs Schematic 0.0.19>
+<Properties>
+  <View=236,91,1177,801,1.31268,0,0>
+  <Grid=10,10,1>
+  <DataSet=icke_inverterade.dat>
+  <DataDisplay=icke_inverterade.dpl>
+  <OpenDisplay=1>
+  <Script=icke_inverterade.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+  <GND * 1 470 620 0 0 0 0>
+  <IProbe Pr1 1 470 570 -41 -26 0 3>
+  <R R2 1 470 490 -53 -26 0 3 "1k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <R R1 1 600 430 -26 15 1 2 "2k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <Lib OP1 1 560 360 -20 23 0 0 "Ideal" 0 "OpAmp" 0 "1E6" 0 "106" 0 "75" 0 "14" 0 "-14" 0>
+  <GND * 1 290 610 0 0 0 0>
+  <Vdc V1 1 290 500 18 -26 0 1 "1 V" 1>
+  <Vac V2 1 290 410 18 -26 0 1 "0.5 V" 1 "1 kHz" 0 "0" 0 "0" 0>
+  <.DC DC1 1 330 140 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
+  <.TR TR1 1 510 140 0 78 0 0 "lin" 1 "0" 1 "2 ms" 1 "201" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+</Components>
+<Wires>
+  <470 600 470 620 "" 0 0 0 "">
+  <470 520 470 540 "" 0 0 0 "">
+  <470 430 470 460 "" 0 0 0 "">
+  <470 430 570 430 "" 0 0 0 "">
+  <630 430 670 430 "" 0 0 0 "">
+  <670 360 670 430 "" 0 0 0 "">
+  <590 360 670 360 "Uut" 630 310 21 "">
+  <470 370 470 430 "" 0 0 0 "">
+  <470 370 530 370 "" 0 0 0 "">
+  <290 530 290 610 "" 0 0 0 "">
+  <290 440 290 470 "" 0 0 0 "">
+  <290 350 530 350 "Uin" 410 290 99 "">
+  <290 350 290 380 "" 0 0 0 "">
+</Wires>
+<Diagrams>
+  <Rect 750 674 380 314 3 #c0c0c0 1 00 1 0 0.0002 0.002 1 0 1 5 1 -1 0.5 1 315 0 225 "" "" "">
+	<"Uut.Vt" #0000ff 4 3 0 0 0>
+	  <Mkr 0.00025 58 -403 3 0 0>
+	<"Uin.Vt" #ff0000 4 3 0 0 0>
+	  <Mkr 0.00026 -141 -114 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
