@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=429,1,2126,675,0.909093,562,0>
+  <View=429,1,2126,675,0.909093,142,0>
   <Grid=10,10,0>
   <DataSet=STROM_SPEGEL.dat>
   <DataDisplay=STROM_SPEGEL.dpl>

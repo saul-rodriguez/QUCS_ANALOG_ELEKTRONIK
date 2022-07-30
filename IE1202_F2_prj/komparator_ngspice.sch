@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=94,141,1280,853,1.39312,78,37>
+  <View=94,111,1280,853,0.95152,35,28>
   <Grid=10,10,1>
   <DataSet=komparator_ngspice.dat>
   <DataDisplay=komparator_ngspice.dpl>
@@ -23,7 +23,7 @@
   <Lib OP1 1 630 360 -20 23 0 0 "Ideal" 0 "OpAmp" 0 "1E6" 0 "106" 0 "75" 0 "14" 0 "-14" 0>
   <GND * 1 460 460 0 0 0 0>
   <Vdc V2 1 460 400 -74 -26 1 1 "V_IN" 1>
-  <Vdc V1 1 520 400 18 -26 0 1 "5 V" 1>
+  <Vdc V1 1 520 400 18 -26 0 1 "3 V" 1>
 </Components>
 <Wires>
   <520 430 520 460 "" 0 0 0 "">

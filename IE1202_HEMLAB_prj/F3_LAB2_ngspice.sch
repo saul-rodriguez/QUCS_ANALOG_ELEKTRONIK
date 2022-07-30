@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-10,-110,1187,819,1,0,60>
+  <View=-10,-110,1187,819,1,0,46>
   <Grid=10,10,0>
   <DataSet=F3_LAB2_ngspice.dat>
   <DataDisplay=F3_LAB2_ngspice.dpl>
@@ -21,7 +21,6 @@
   <GND * 1 280 390 0 0 0 0>
   <Vac V3 1 410 440 18 -26 0 1 "1" 1 "1 kHz" 1 "0" 0 "0" 0>
   <GND * 1 410 490 0 0 0 0>
-  <R R2 1 560 400 -26 -61 0 2 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C1 1 470 400 -26 -63 1 0 "10 nF" 1 "" 0 "neutral" 0>
   <R R1 1 700 260 -26 15 0 0 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Sub SUB1 1 720 390 -30 -47 1 0 "OPAMP741.sch" 0>
@@ -29,6 +28,7 @@
   <.DC DC1 1 250 -20 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
   <.AC AC1 1 430 -20 0 46 0 0 "log" 1 "10" 1 "1MHz" 1 "51" 1 "no" 0>
   <NutmegEq NutmegEq1 1 280 110 -27 19 0 0 "ac" 1 "VOUT_dB=dB(ac.v(VOUT))" 1>
+  <R R2 1 560 400 -26 -61 0 2 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <330 350 330 370 "" 0 0 0 "">

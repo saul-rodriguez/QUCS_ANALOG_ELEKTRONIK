@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=130,-9,1611,947,1,0,0>
+  <View=130,-49,1611,870,0.683014,0,8>
   <Grid=10,10,0>
   <DataSet=MOS_DIFF_PAIR_ngspice.dat>
   <DataDisplay=MOS_DIFF_PAIR_ngspice.dpl>
@@ -48,7 +48,7 @@
   <MOSFET T3 1 670 650 34 -26 0 0 "nfet" 0 "0.8V" 0 "200u" 0 "0.5" 0 "0.6 V" 0 "0.001" 0 "0.0 Ohm" 0 "0.0 Ohm" 0 "0.0 Ohm" 0 "1e-14 A" 0 "1.0" 0 "100 um" 1 "1 um" 1 "0.0" 0 "0.1 um" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0 F" 0 "0.0 F" 0 "0.8 V" 0 "0.5" 0 "0.5" 0 "0.0" 0 "0.33" 0 "0.0 ps" 0 "0.0" 0 "0.0" 0 "1" 0 "600.0" 0 "0.0" 0 "1" 0 "1" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0" 0 "0.0 m" 0 "0.0 m" 0 "0.0" 0 "1.0" 0 "1.0" 0 "26.85" 0 "26.85" 0>
   <Eqn Eqn1 1 760 60 -31 19 0 0 "Av_diff=Voutp.v-Voutn.v" 1 "yes" 0>
   <NutmegEq NutmegEq1 1 1140 90 -27 19 0 0 "ac" 1 "Av=ac.v(Voutp)-ac.v(Voutn)" 1>
-  <SpicePar SpicePar1 1 1430 90 -29 19 0 0 "VDIFF=1" 1 "Vinp=VDIFF/2" 1 "Vinn=VDIFF/2" 1 "VCM=0" 1>
+  <SpicePar SpicePar1 1 1430 90 -29 19 0 0 "VDIFF=0.1" 1 "Vinp=VDIFF/2" 1 "Vinn=VDIFF/2" 1 "VCM=0" 1>
   <NutmegEq NutmegEq2 1 960 90 -27 19 0 0 "tran" 1 "Av=Voutp-Voutn" 1>
 </Components>
 <Wires>

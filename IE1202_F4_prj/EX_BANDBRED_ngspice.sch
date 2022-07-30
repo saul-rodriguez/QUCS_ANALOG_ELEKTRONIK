@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,34,1651,1153,1,0,6>
+  <View=0,61,1651,1093,0.826446,201,54>
   <Grid=10,10,1>
   <DataSet=EX_BANDBRED_ngspice.dat>
   <DataDisplay=EX_BANDBRED_ngspice.dpl>
@@ -26,9 +26,9 @@
   <Vac V4 1 830 350 18 -26 0 1 "1 V" 1 "1 GHz" 0 "0" 0 "0" 0>
   <GND * 1 960 480 0 0 0 0>
   <R R1 1 960 430 15 -26 0 1 "1k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <R R2 1 1070 380 -26 15 1 2 "9k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <.AC AC1 1 630 90 0 46 0 0 "log" 1 "0.1" 1 "10MHz" 1 "81" 1 "no" 0>
   <NutmegEq NutmegEq1 1 850 110 -27 19 0 0 "ac" 1 "Out2_dB=dB(ac.v(Out2))" 1 "Out_dB=dB(ac.v(Out))" 1>
+  <R R2 1 1070 380 -26 15 1 2 "9k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <670 330 760 330 "Out" 750 280 69 "">

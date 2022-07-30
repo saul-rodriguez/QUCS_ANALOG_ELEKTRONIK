@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=80,121,1567,1271,0.826447,95,81>
+  <View=80,121,1567,1271,0.826447,95,21>
   <Grid=10,10,0>
   <DataSet=EX1_CE_ngspice.dat>
   <DataDisplay=EX1_CE_ngspice.dpl>

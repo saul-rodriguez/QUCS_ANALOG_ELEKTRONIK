@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-4,-339,2592,1515,0.51316,0,0>
+  <View=-4,-219,2592,1515,0.51316,0,60>
   <Grid=10,10,1>
   <DataSet=fasretarderande_ngspice.dat>
   <DataDisplay=fasretarderande_ngspice.dpl>

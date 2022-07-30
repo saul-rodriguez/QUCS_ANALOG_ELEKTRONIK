@@ -1,7 +1,7 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=88,-70,1660,858,0.751317,0,0>
-  <Grid=10,10,1>
+  <View=88,-49,1660,858,0.751317,0,0>
+  <Grid=10,10,0>
   <DataSet=DIFF_SPICE.dat>
   <DataDisplay=DIFF_SPICE.dpl>
   <OpenDisplay=0>
@@ -37,13 +37,13 @@
   <Vdc V7 1 1040 660 18 -26 0 1 "0" 1>
   <GND * 1 1040 710 0 0 0 0>
   <Vac V8 1 1040 570 18 -26 0 1 "UCM" 1 "1 GHz" 0 "0" 0 "0" 0>
-  <Eqn Eqn1 1 440 20 -31 19 0 0 "UCM=1" 1 "UDIF=0.00001" 1 "yes" 0>
+  <Eqn Eqn1 1 440 20 -31 19 0 0 "UCM=1" 1 "UDIF=0.5" 1 "yes" 0>
   <.AC AC1 1 560 -10 0 47 0 0 "log" 1 "1" 1 "1000MEG" 1 "181" 1 "no" 0>
-  <NutmegEq NutmegEq1 0 820 10 -27 19 0 0 "ac" 1 "B_dB=dB(ac.v(VB))" 1 "B_phase=phase(ac.v(VB))*180/3.141592" 1 "Vut_dB=dB(ac.v(Vut))" 1>
-  <NutmegEq NutmegEq2 1 1160 10 -27 19 0 0 "ac" 1 "VOUT_DIFF=ac.v(VOUTP)-ac.v(VOUTN)" 1 "VOUT_DIFF_DB=dB(VOUT_DIFF)" 1 "VOUT_SINGLE_OUT=dB(ac.v(VOUTP))" 1>
   <R R5 1 290 430 15 -26 0 1 "9.5k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R2 1 550 300 15 -26 0 1 "5k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R3 1 760 300 -71 -26 1 1 "5k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <NutmegEq NutmegEq3 0 840 0 -27 19 0 0 "ac" 1 "VOUT_DIFF=ac.v(VOUTP)-ac.v(VOUTN)" 1 "VOUT_SINGLE_OUT_DB=dB(ac.v(VOUTP))" 1>
+  <NutmegEq NutmegEq2 1 1160 10 -27 19 0 0 "ac" 1 "VOUT_DIFF=ac.v(VOUTP)-ac.v(VOUTN)" 1 "VOUT_DIFF_DB=dB(VOUT_DIFF)" 1 "VOUT_SINGLE_OUT_DB=dB(ac.v(VOUTP))" 1>
 </Components>
 <Wires>
   <550 262 550 270 "" 0 0 0 "">
@@ -96,18 +96,17 @@
   <920 580 920 590 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1150 728 398 264 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -5.38661 20 60 1 -1 1 1 315 0 225 "" "" "">
+  <Rect 1150 728 398 264 3 #c0c0c0 1 10 1 1 1 1e+09 1 -0.0921972 0.2 1.07417 1 -1 0.5 1 315 0 225 "" "" "">
 	<"ngspice/ac.v(voutp)" #0000ff 0 3 0 0 0>
 	  <Mkr 240.41 53 -127 3 0 0>
 	<"ngspice/ac.v(voutn)" #ff0000 0 3 0 0 0>
 	<"ngspice/ac.vout_diff" #ff00ff 0 3 0 0 0>
 	  <Mkr 124.52 56 -204 3 0 0>
   </Rect>
-  <Rect 1120 439 427 239 3 #c0c0c0 1 10 1 1 1 1e+09 1 -33.2722 20 46.8419 1 -1 0.5 1 315 0 225 "" "" "">
+  <Rect 1120 439 427 239 3 #c0c0c0 1 10 1 0 1 0 1 -1 0.5 1 1 -1 0.5 1 315 0 225 "" "" "">
 	<"ngspice/ac.vout_diff_db" #ff0000 0 3 0 0 0>
 	  <Mkr 46.4159 149 -204 3 0 0>
-	<"ngspice/ac.vout_single_out" #ff00ff 0 3 0 0 0>
-	  <Mkr 64.4947 116 -108 3 0 0>
+	<"ngspice/ac.vout_single_out_db" #ff0000 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

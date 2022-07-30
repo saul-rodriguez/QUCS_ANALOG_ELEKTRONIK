@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,-180,1291,1160,1,0,120>
+  <View=0,0,1291,1160,1,0,120>
   <Grid=10,10,1>
   <DataSet=F3_3_min_question.dat>
   <DataDisplay=F3_3_min_question.dpl>
@@ -27,7 +27,6 @@
   <Vac V1 1 190 340 18 -26 0 1 "1 V" 1 "1 GHz" 0 "0" 0 "0" 0>
   <GND * 1 190 420 0 0 0 0>
   <.DC DC1 1 200 50 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
-  <C C1 1 420 360 17 -26 0 1 "1u" 1 "" 0 "neutral" 0>
   <.AC AC1 1 440 50 0 46 0 0 "log" 1 "1" 1 "100k" 1 "61" 1 "no" 0>
   <Lib OP2 1 840 280 -20 23 0 0 "Ideal" 0 "OpAmp" 0 "1E6" 0 "106" 0 "75" 0 "14" 0 "-14" 0>
   <R R2 1 670 270 -26 15 0 0 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
@@ -37,6 +36,7 @@
   <GND * 1 1080 440 0 0 0 0>
   <C C3 1 1080 380 17 -26 0 1 "1u" 1 "" 0 "neutral" 0>
   <NutmegEq NutmegEq1 1 690 70 -27 19 0 0 "ac" 1 "Vuut_dB=dB(ac.v(Uut))" 1 "Vuut_phase=phase(ac.v(Uut))*180/3.141592" 1>
+  <C C1 1 420 360 17 -26 0 1 "1u" 1 "" 0 "neutral" 0>
 </Components>
 <Wires>
   <370 260 420 260 "" 0 0 0 "">

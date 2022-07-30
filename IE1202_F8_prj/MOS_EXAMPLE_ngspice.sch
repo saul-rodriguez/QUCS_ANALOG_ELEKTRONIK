@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=194,111,1518,949,1.07746,0,300>
+  <View=194,94,1518,939,1.07746,0,26>
   <Grid=10,10,0>
   <DataSet=MOS_EXAMPLE_ngspice.dat>
   <DataDisplay=MOS_EXAMPLE_ngspice.dpl>

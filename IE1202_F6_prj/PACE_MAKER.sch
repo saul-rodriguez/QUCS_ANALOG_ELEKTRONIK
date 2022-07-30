@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-156,35,1343,951,0.909091,0,0>
+  <View=-156,-40,1343,951,0.751315,33,38>
   <Grid=10,10,1>
   <DataSet=PACE_MAKER.dat>
   <DataDisplay=PACE_MAKER.dpl>

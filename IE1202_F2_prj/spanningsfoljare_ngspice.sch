@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=236,-130,1177,911,1.31268,0,290>
+  <View=236,-10,1177,911,1.31268,0,290>
   <Grid=10,10,1>
   <DataSet=spanningsfoljare_ngspice.dat>
   <DataDisplay=spanningsfoljare_ngspice.dpl>
@@ -19,7 +19,7 @@
   <Lib OP1 1 560 360 -20 23 0 0 "Ideal" 0 "OpAmp" 0 "1E6" 0 "106" 0 "75" 0 "14" 0 "-14" 0>
   <GND * 1 290 610 0 0 0 0>
   <Vdc V1 1 290 500 18 -26 0 1 "1 V" 1>
-  <Vac V2 1 290 410 18 -26 0 1 "0.5 V" 1 "1 kHz" 0 "0" 0 "0" 0>
+  <Vac V2 1 290 410 18 -26 0 1 "0.25 V" 1 "1 kHz" 0 "0" 0 "0" 0>
   <.DC DC1 1 330 140 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
   <.TR TR1 1 510 140 0 78 0 0 "lin" 1 "0" 1 "2 ms" 1 "201" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>

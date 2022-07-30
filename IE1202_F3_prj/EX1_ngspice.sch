@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,-102,1300,955,1,0,4>
+  <View=0,-73,1300,835,1,0,4>
   <Grid=10,10,1>
   <DataSet=EX1_ngspice.dat>
   <DataDisplay=EX1_ngspice.dpl>
@@ -20,10 +20,10 @@
   <Vac V1 1 250 170 18 -26 0 1 "1 V" 1 "1 GHz" 0 "0" 0 "0" 0>
   <GND * 1 250 220 0 0 0 0>
   <R R2 1 350 80 -26 -61 0 2 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <R R1 1 490 150 15 -26 0 1 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C1 1 350 10 -26 -63 0 2 "22n" 1 "" 0 "neutral" 0>
   <.AC AC1 1 580 10 0 46 0 0 "log" 1 "0.1" 1 "100k" 1 "51" 1 "no" 0>
   <NutmegEq NutmegEq1 1 820 30 -27 19 0 0 "ac" 1 "Vuut_dB=dB(ac.v(Uut))" 1 "Vuut_phase=phase(ac.v(Uut))*180/3.141592" 1>
+  <R R1 1 490 150 15 -26 0 1 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <490 180 490 220 "" 0 0 0 "">

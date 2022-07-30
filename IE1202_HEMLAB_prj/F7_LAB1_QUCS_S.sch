@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-220,-206,1825,962,0.751316,0,53>
+  <View=-220,-206,1825,962,0.751316,0,0>
   <Grid=10,10,0>
   <DataSet=F7_LAB1_QUCS_S.dat>
   <DataDisplay=F7_LAB1_QUCS_S.dpl>
@@ -59,7 +59,7 @@
   <.AC AC1 1 1280 230 0 47 0 0 "log" 1 "0.1" 1 "1k" 1 "41" 1 "no" 0>
   <.TR TR1 1 1280 20 0 79 0 0 "lin" 1 "0" 1 "200 ms" 1 "401" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <NutmegEq NutmegEq1 1 950 -10 -27 19 0 0 "ac" 1 "ID_mag=abs(vpr1#branch)" 1 "Vout1_mag=abs(ac.v(Vout1))" 1 "Vout2_mag=abs(ac.v(Vout2))" 1>
-  <Eqn Eqn1 1 170 20 -31 19 0 0 "VCM=325" 1 "VDIFF=1" 1 "VOFFSET=50 mV" 1 "yes" 0>
+  <Eqn Eqn1 1 170 20 -31 19 0 0 "VCM=325" 1 "VDIFF=1m" 1 "VOFFSET=50 mV" 1 "yes" 0>
   <R R10 1 590 660 -26 -61 1 0 "200k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Vac V10 1 170 230 18 -26 0 1 "VDIFF" 1 "10 Hz" 0 "0" 0 "0" 0>
 </Components>

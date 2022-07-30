@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-155,-189,2592,2085,0.51316,0,0>
+  <View=-155,-99,2592,1785,0.51316,0,0>
   <Grid=10,10,1>
   <DataSet=internkompensering_ngspice.dat>
   <DataDisplay=internkompensering_ngspice.dpl>

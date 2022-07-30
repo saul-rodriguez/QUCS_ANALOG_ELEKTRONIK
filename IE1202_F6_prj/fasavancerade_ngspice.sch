@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=-155,-219,2592,1951,0.51316,0,0>
+  <View=-155,-159,2592,1711,0.51316,0,0>
   <Grid=10,10,1>
   <DataSet=fasavancerade_ngspice.dat>
   <DataDisplay=fasavancerade_ngspice.dpl>

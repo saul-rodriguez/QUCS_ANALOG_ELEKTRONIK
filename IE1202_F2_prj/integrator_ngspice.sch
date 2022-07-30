@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=56,-19,1397,881,1.10952,0,0>
+  <View=56,51,1397,881,0.757817,0,0>
   <Grid=10,10,1>
   <DataSet=integrator_ngspice.dat>
   <DataDisplay=integrator_ngspice.dpl>
@@ -20,11 +20,11 @@
   <.DC DC1 1 550 90 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
   <GND * 1 560 390 0 0 0 0>
   <C C1 1 640 250 -26 17 0 0 "1uF" 1 "" 0 "neutral" 0>
-  <R R2 1 450 320 -26 -61 1 0 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Vrect V6 1 240 350 18 -26 0 1 ".1 V" 1 "2 ms" 1 "2 ms" 1 "1 us" 0 "1 us" 0 "2m" 0>
   <.TR TR1 1 270 80 0 78 0 0 "lin" 1 "0" 1 "10 ms" 1 "10001" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <GND * 1 240 520 0 0 0 0>
   <Vrect V7 1 240 460 18 -26 0 1 "-.1 V" 1 "2 ms" 1 "2 ms" 1 "1 us" 0 "1 us" 0 "0" 0>
+  <R R2 1 450 320 -26 -61 1 0 "10k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <670 360 750 360 "" 0 0 0 "">

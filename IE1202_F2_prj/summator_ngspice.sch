@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=179,61,1337,821,0.757818,34,0>
+  <View=179,61,1337,821,0.757818,0,0>
   <Grid=10,10,1>
   <DataSet=summator_ngspice.dat>
   <DataDisplay=summator_ngspice.dpl>
@@ -20,7 +20,7 @@
   <GND * 1 580 400 0 0 0 0>
   <.DC DC1 1 550 90 0 46 0 0 "26.85" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "no" 0 "150" 0 "no" 0 "none" 0 "CroutLU" 0>
   <R R3 1 640 280 -26 -61 1 0 "2k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <Vac V2 1 290 410 18 -26 0 1 "0.5 V" 1 "1 kHz" 1 "0" 0 "0" 0>
+  <Vac V2 1 290 410 18 -26 0 1 "0.25 V" 1 "1 kHz" 1 "0" 0 "0" 0>
   <Vac V4 1 400 490 18 -26 0 1 "0.5 V" 1 "10 kHz" 1 "0" 0 "0" 0>
   <GND * 1 400 550 0 0 0 0>
   <GND * 1 290 490 0 0 0 0>

@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=158,-54,2146,1052,0.729551,25,50>
+  <View=158,-54,2146,1052,0.729551,25,0>
   <Grid=10,10,0>
   <DataSet=F13_LAB2_NGSPICE.dat>
   <DataDisplay=F13_LAB2_NGSPICE.dpl>
@@ -42,8 +42,8 @@
   <NPN_SPICE Q3 1 400 690 0 34 1 2 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>
   <PNP_SPICE Q6 1 1080 410 -26 -80 1 0 "bc557c" 1 "" 0 "" 0 "" 0 "" 0>
   <SpiceInclude SpiceInclude1 1 310 120 -36 19 0 0 "bcmodels.lib" 1 "" 0 "" 0 "" 0 "" 0>
-  <Eqn Eqn1 1 730 40 -31 19 0 0 "CAP=10000" 1 "IND=10000" 1 "Cin=13p" 1 "yes" 0>
-  <Eqn Eqn2 0 850 40 -31 19 0 0 "CAP=0" 1 "IND=0" 1 "Cin=0" 1 "yes" 0>
+  <Eqn Eqn1 0 730 40 -31 19 0 0 "CAP=10000" 1 "IND=10000" 1 "Cin=13p" 1 "yes" 0>
+  <Eqn Eqn2 1 850 40 -31 19 0 0 "CAP=0" 1 "IND=0" 1 "Cin=0" 1 "yes" 0>
   <C C2 1 1290 630 17 -26 0 1 "Cin" 1 "" 0 "neutral" 0>
   <R R9 1 1240 630 -71 -26 1 1 "1k" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <NPN_SPICE Q5 1 1080 680 -26 34 0 0 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>

@@ -1,0 +1,40 @@
+* Qucs 0.0.24 /home/saul/projects/qucs_s/QUCS_ANALOG_ELEKTRONIK/IE1202_F12_prj/EX1_CE_DARLINGTON_ngspice.sch
+.INCLUDE "/usr/local/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+* Qucs 0.0.24  /home/saul/projects/qucs_s/QUCS_ANALOG_ELEKTRONIK/IE1202_F12_prj/EX1_CE_DARLINGTON_ngspice.sch
+.PARAM Uin = 0.01
+R1 _net0 E  270
+VPr2 _net1 _net2 DC 0
+VPr3 _net0 0 DC 0
+VPr1 _net3 B DC 0
+C3 _net3 Uin  10U 
+VPr4 _net1 _net4 DC 0
+R3 0 _net3  6000
+Q2N3904_1 _net5 B E QMOD_Q2N3904_1 AREA=1 TEMP=26.85
+.MODEL QMOD_Q2N3904_1 npn (Is=1.4e-14 Nf=1 Nr=1 Ikf=0.025 Ikr=0 Vaf=100 Var=0 Ise=3e-13 Ne=1.5 Isc=0 Nc=2 Bf=300 Br=7.5 Rbm=0 Irb=0 Rc=2.4 Re=0 Rb=0 Cje=4.5e-12 Vje=0.75 Mje=0.33 Cjc=3.5e-12 Vjc=0.75 Mjc=0.33 Xcjc=1 Cjs=0 Vjs=0.75 Mjs=0 Fc=0.5 Tf=4e-10 Xtf=0 Vtf=0 Itf=0 Tr=2.1e-08 Kf=9e-16 Af=1 Ptf=0 Xtb=1.5 Xti=3 Eg=1.11 Tnom=26.85 )
+R4 _net3 _net4  22000
+V2 Uin 0 DC 0 SIN(0 {UIN} 1K 0 0 0) AC {UIN}
+R2 _net5 _net2  1000
+V1 _net1 0 DC 9
+Q2N3904_2 _net7 _net6 Vout QMOD_Q2N3904_2 AREA=1 TEMP=26.85
+.MODEL QMOD_Q2N3904_2 npn (Is=1.4e-14 Nf=1 Nr=1 Ikf=0.025 Ikr=0 Vaf=100 Var=0 Ise=3e-13 Ne=1.5 Isc=0 Nc=2 Bf=300 Br=7.5 Rbm=0 Irb=0 Rc=2.4 Re=0 Rb=0 Cje=4.5e-12 Vje=0.75 Mje=0.33 Cjc=3.5e-12 Vjc=0.75 Mjc=0.33 Xcjc=1 Cjs=0 Vjs=0.75 Mjs=0 Fc=0.5 Tf=4e-10 Xtf=0 Vtf=0 Itf=0 Tr=2.1e-08 Kf=9e-16 Af=1 Ptf=0 Xtb=1.5 Xti=3 Eg=1.11 Tnom=26.85 )
+VPr5 _net1 _net7 DC 0
+Q2N3904_3 _net7 _net5 _net6 QMOD_Q2N3904_3 AREA=1 TEMP=26.85
+.MODEL QMOD_Q2N3904_3 npn (Is=1.4e-14 Nf=1 Nr=1 Ikf=0.025 Ikr=0 Vaf=100 Var=0 Ise=3e-13 Ne=1.5 Isc=0 Nc=2 Bf=300 Br=7.5 Rbm=0 Irb=0 Rc=2.4 Re=0 Rb=0 Cje=4.5e-12 Vje=0.75 Mje=0.33 Cjc=3.5e-12 Vjc=0.75 Mjc=0.33 Xcjc=1 Cjs=0 Vjs=0.75 Mjs=0 Fc=0.5 Tf=4e-10 Xtf=0 Vtf=0 Itf=0 Tr=2.1e-08 Kf=9e-16 Af=1 Ptf=0 Xtb=1.5 Xti=3 Eg=1.11 Tnom=26.85 )
+R5 0 Vout  50
+.control
+echo "" > spice4qucs.cir.noise
+echo "" > spice4qucs.cir.pz
+ac dec 11 1 1g 
+let Av = (Vout/Uin)
+write EX1_CE_DARLINGTON_ngspice_ac.txt v(B) v(E) v(Uin) VPr1#branch VPr2#branch VPr3#branch VPr4#branch VPr5#branch v(Vout)  Av
+destroy all
+reset
+
+tran 9.95025e-06 0.002 0 
+write EX1_CE_DARLINGTON_ngspice_tran.txt v(B) v(E) v(Uin) VPr1#branch VPr2#branch VPr3#branch VPr4#branch VPr5#branch v(Vout) 
+destroy all
+reset
+
+exit
+.endc
+.END

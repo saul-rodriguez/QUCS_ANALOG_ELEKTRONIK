@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=0,1,1499,897,1,0,0>
+  <View=0,-119,1499,897,0.683013,0,0>
   <Grid=10,10,0>
   <DataSet=F13_LAB1_NGSPICE.dat>
   <DataDisplay=F13_LAB1_NGSPICE.dpl>

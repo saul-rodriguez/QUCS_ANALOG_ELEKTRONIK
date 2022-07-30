@@ -1,4 +1,4 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
   <View=106,-140,1770,1004,0.892207,0,0>
   <Grid=10,10,1>
@@ -17,7 +17,6 @@
 </Symbol>
 <Components>
   <VCVS SRC1 1 520 140 -26 34 0 0 "10" 1 "0" 0>
-  <C C1 1 310 100 -26 17 0 0 "1 nF" 1 "" 0 "neutral" 0>
   <R R2 1 390 140 15 -26 0 1 "5000 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <GND * 1 280 220 0 0 0 0>
   <Vac V1 1 180 140 18 -26 0 1 "1 V" 1 "1 GHz" 0 "0" 0 "0" 0>
@@ -26,6 +25,7 @@
   <R R3 1 650 100 -26 15 0 0 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C2 1 730 140 17 -26 0 1 "1 nF" 1 "" 0 "neutral" 0>
   <NutmegEq NutmegEq1 1 1090 110 -27 19 0 0 "ac" 1 "Vout_dB=dB(ac.v(vout))" 1>
+  <C C1 1 310 100 -26 17 0 0 "1 nF" 1 "" 0 "neutral" 0>
 </Components>
 <Wires>
   <490 170 490 180 "" 0 0 0 "">

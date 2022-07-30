@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
-  <View=274,137,1380,1051,0.967331,0,15>
+  <View=274,141,1380,1045,0.967331,0,255>
   <Grid=10,10,0>
   <DataSet=EX_NPN_VCE_ngspice.dat>
   <DataDisplay=EX_NPN_VCE_ngspice.dpl>

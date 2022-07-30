@@ -1,4 +1,4 @@
-<Qucs Schematic 0.0.21>
+<Qucs Schematic 0.0.24>
 <Properties>
   <View=110,-170,1342,595,1.21,0,0>
   <Grid=10,10,0>
