@@ -1,18 +1,24 @@
 Ngspice started...
+warning, can't find model 'ro' from line
+    r2 out _net1 ro
+warning, can't find model 'r1' from line
+    r1 nc _net0 r1
+warning, can't find model 'c1' from line
+    c1 nc 0 c1
 
 Note: No compatibility mode selected!
 
 
-Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/ie1202_f12_prj/ex1_ce_darlington_ngspice.sch
+Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/tenta_2020_06_prj/mål1_1_ngspirce.sch
 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
 
-No. of Data Rows : 100
-binary raw file "EX1_CE_DARLINGTON_ngspice_ac.txt"
-Reset re-loads circuit * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/ie1202_f12_prj/ex1_ce_darlington_ngspice.sch
+No. of Data Rows : 127
+binary raw file "Mål1_1_ngspirce_ac.txt"
+Reset re-loads circuit * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/tenta_2020_06_prj/mål1_1_ngspirce.sch
 
-Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/ie1202_f12_prj/ex1_ce_darlington_ngspice.sch
+Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/tenta_2020_06_prj/mål1_1_ngspirce.sch
 
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
@@ -22,31 +28,21 @@ Initial Transient Solution
 
 Node                                   Voltage
 ----                                   -------
+xop1._net0                                   0
+vin                                          0
 _net0                                        0
-e                                      1.10467
-_net1                                        9
-_net2                                        9
-_net3                                  1.78998
-b                                      1.78998
-uin                                          0
-_net4                                        9
-_net5                                  4.92962
-_net7                                        9
-_net6                                  4.28385
-vout                                    3.4961
-vpr5#branch                          0.0699135
-v1#branch                           -0.0743116
-v2#branch                                    0
-vpr4#branch                        0.000327728
-vpr1#branch                        2.93977e-05
-vpr3#branch                         0.00409137
-vpr2#branch                         0.00407038
+vout                                         0
+xop1._net1                                   0
+xop1.nc                                      0
+b.xop1.b1#branch                             0
+e.xop1.esrc1#branch                          0
+v1#branch                                    0
 
 
-No. of Data Rows : 209
-binary raw file "EX1_CE_DARLINGTON_ngspice_tran.txt"
-Reset re-loads circuit * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/ie1202_f12_prj/ex1_ce_darlington_ngspice.sch
+No. of Data Rows : 63
+binary raw file "Mål1_1_ngspirce_tran.txt"
+Reset re-loads circuit * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/tenta_2020_06_prj/mål1_1_ngspirce.sch
 
-Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/ie1202_f12_prj/ex1_ce_darlington_ngspice.sch
+Circuit: * qucs 0.0.24 /home/saul/projects/qucs_s/qucs_analog_elektronik/tenta_2020_06_prj/mål1_1_ngspirce.sch
 
 ngspice-37 done

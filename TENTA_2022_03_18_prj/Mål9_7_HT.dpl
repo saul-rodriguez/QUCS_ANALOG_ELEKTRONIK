@@ -1,0 +1,33 @@
+<Qucs Schematic 0.0.22>
+<Properties>
+  <View=-52,0,800,1229,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=Mål9_7_HT.dat>
+  <DataDisplay=Mål9_7_HT.sch>
+  <OpenDisplay=1>
+  <Script=Mål9_7_HT.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 80 404 633 364 3 #c0c0c0 1 10 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"ngspice/ac.ab_db" #0000ff 0 3 0 0 0>
+	<"ngspice/ac.ab_phase" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 80 830 653 360 3 #c0c0c0 1 10 1 0 2e+08 1e+09 1 -30.3664 20 13.1536 1 -1 1 1 315 0 225 "" "" "">
+	<"ngspice/ac.vut_db" #0000ff 0 3 0 0 0>
+	  <Mkr 64.4947 141 -279 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
