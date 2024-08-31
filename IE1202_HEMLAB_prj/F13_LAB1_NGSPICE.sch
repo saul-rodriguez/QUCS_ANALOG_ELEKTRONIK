@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.24>
+<Qucs Schematic 24.2.1>
 <Properties>
-  <View=0,-119,1499,897,0.683013,0,0>
+  <View=75,-19,1546,893,0.744518,0,0>
   <Grid=10,10,0>
   <DataSet=F13_LAB1_NGSPICE.dat>
   <DataDisplay=F13_LAB1_NGSPICE.dpl>
@@ -39,11 +39,11 @@
   <IProbe Pr3 1 430 650 -26 16 0 0>
   <NPN_SPICE Q1 1 600 470 -26 34 0 0 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>
   <GND * 1 470 570 0 0 0 0>
-  <Vac V3 1 470 510 18 -26 0 1 "VIN" 1 "1 kHz" 1 "0" 0 "0" 0>
+  <Vac V3 1 470 510 18 -26 0 1 "VIN" 1 "1 kHz" 1 "0" 0 "0" 0 "0" 0 "0" 0>
   <NPN_SPICE Q2 1 810 470 0 34 1 2 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>
   <NPN_SPICE Q3 1 370 710 0 34 1 2 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>
   <NPN_SPICE Q4 1 700 710 -26 34 0 0 " bc547c" 1 "" 0 "" 0 "" 0 "" 0>
-  <NutmegEq NutmegEq1 1 1190 50 -27 19 0 0 "ac" 1 "Out_dif=ac.v(vc1)-ac.v(vc2)" 1>
+  <NutmegEq NutmegEq1 1 1190 50 -27 19 0 0 "AC1" 1 "Out_dif=ac.v(vc1)-ac.v(vc2)" 1>
 </Components>
 <Wires>
   <600 332 600 340 "" 0 0 0 "">
@@ -92,16 +92,16 @@
   <470 540 470 570 "" 0 0 0 "">
 </Wires>
 <Diagrams>
-  <Rect 1070 790 383 260 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+  <Rect 1070 790 383 260 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(vc1)" #0000ff 0 3 0 0 0>
 	<"ngspice/tran.v(vc2)" #ff0000 0 3 0 0 0>
   </Rect>
-  <Rect 1070 453 382 263 3 #c0c0c0 1 10 1 1 1 1e+07 1 0 0.1 0.410689 1 -1 0.5 1 315 0 225 "" "" "">
+  <Rect 1070 453 382 263 3 #c0c0c0 1 10 1 1 1 1e+07 1 0 0.1 0.410689 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.v(vc1)" #0000ff 0 3 0 0 0>
-	  <Mkr 18.7382 59 -102 3 0 0>
+	  <Mkr 19.9526 59 -102 3 0 0>
 	<"ngspice/ac.v(vc2)" #ff0000 0 3 0 0 0>
 	<"ngspice/ac.out_dif" #ff00ff 0 3 0 0 0>
-	  <Mkr 18.7382 59 -223 3 0 0>
+	  <Mkr 19.9526 59 -223 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
